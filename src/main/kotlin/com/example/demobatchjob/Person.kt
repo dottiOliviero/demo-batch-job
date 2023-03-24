@@ -1,13 +1,9 @@
 package com.example.demobatchjob;
 
-class Person {
-    private var lastName: String? = null
-    private var firstName: String? = null
+class Person(private var firstName: String?, private var lastName: String?) {
 
-    constructor(firstName: String?, lastName: String?) {
-        this.firstName = firstName
-        this.lastName = lastName
-    }
+    // needed for spring magic
+    constructor(): this(null, null)
 
     fun setFirstName(firstName: String?) {
         this.firstName = firstName
