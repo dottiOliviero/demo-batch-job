@@ -1,6 +1,4 @@
-import com.example.demobatchjob.Person
-import com.example.demobatchjob.PersonItemProcessor
-import com.example.demobatchjob.JobCompletionNotificationListener
+package com.example.demobatchjob
 
 import javax.sql.DataSource;
 
